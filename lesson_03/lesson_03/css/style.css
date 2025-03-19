@@ -1,0 +1,84 @@
+@import url("reset.css");
+
+
+.title {
+    color: aquamarine;
+}
+
+.main-title {
+    color: rgb(165, 115, 231);
+}
+
+[class*='sub'] {
+    color: blue;
+}
+
+.content .title {
+    color: gold;
+}
+
+.content ul > li {
+    color: blue;
+}
+
+.content ul > li ~ li {
+    color: purple;
+}
+
+#introduction * {
+    color: grey;
+}
+
+#introduction > p + p {
+    color: fuchsia;
+}
+
+#name .green {
+    color: green;
+}
+
+.description p {
+    color: lawngreen;
+}
+
+.rus p {
+    color: yellowgreen;
+}
+
+.ukrane p {
+    color: crimson;
+}
+
+.ukrane p + p {
+    color: darkcyan;
+}
+
+/* Завдання від ментора */
+
+ul > li {
+    color: red;
+}
+
+li + li {
+    color: green;
+}
+
+li > ul > li {
+    color: blue;
+}
+
+li > ul > li + li {
+    color: orange;
+}
+
+li > ol > li {
+    color:  #4597f7;
+}
+
+li > ol > li + li {
+    color: #5d5d5d;
+}
+
+ul > li > span {
+    color: #a0f0fc;
+}
