@@ -1,0 +1,143 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+    font-size: 14px;
+    font-family: "Circular Std", sans-serif;
+}
+
+
+/* Header */
+
+.header-block {
+    background-color: #F35B09;
+    padding: 20px 50px 30px 70px;
+}
+
+.header-block h1 {
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 1.3px;
+    word-spacing: 5px;
+    text-align: center;
+}
+
+/* Maim */
+
+.container {
+    background-color: #231F8B;
+    color: #fff;
+}
+
+.advantage {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 112px 0;
+}
+
+.advantage-sup-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #5A54F2;
+    margin-bottom: 10px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.advantage-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.advantage > p {
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 70px;
+}
+
+.advantage-items {
+    min-height: 360px;
+    margin: 0 -15px;
+    font-size: 0;
+}
+
+.advantage-item {
+    max-width: 22%;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 30px 40px;
+    background-color: #fff;
+}
+
+.advantage-item img {
+    margin-bottom: 20px;
+}
+
+.advantage-item h3 {
+    font-size: 16px;
+    color: #252B42;
+    margin-bottom: 20px;
+}
+
+.advantage-item div {
+    max-width: 50px;
+    min-height: 2px;
+    background-color: #E74040;
+    margin-bottom: 20px;
+}
+
+.advantage-item P {
+    color: #737373;
+    line-height: 1.42;
+    font-size: 14px;
+}
+
+.blue {
+    background-color: #5A54F2;
+}
+
+.blue h3,
+.blue p {
+    color: #fff;
+}
+
+.blue div {
+    background-color: #fff;
+}
+
+.bottom {
+    vertical-align: middle;
+}
+
+/* Footer */
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.footer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer div {
+    margin: 10px;
+}
+
+.first {
+    overflow: auto;
+    height: 42px;
+}
+
+footer .text {
+    display: inline-block;
+    max-width: 47%;
+}
+
+.hidden {
+    overflow: hidden;
+    height: 25px;
+    vertical-align: bottom;
+}
