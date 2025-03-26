@@ -1,12 +1,7 @@
-.montserrat-regular {
+.montserrat-<uniquifier> {
   font-family: "Montserrat";
-  font-weight: 400;
-  font-style: normal;
-}
-  
-.montserrat-bold {
-  font-family: "Montserrat";
-  font-weight: 700;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
   font-style: normal;
 }
   
