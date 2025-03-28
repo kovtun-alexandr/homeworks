@@ -24,16 +24,17 @@ body {
 
 /* Maim */
 
-.container {
+.advantage {
     background-color: #231F8B;
     color: #fff;
 }
 
-.advantage {
+.container {
     max-width: 1050px;
     margin: 0 auto;
-    padding: 112px 0;
+    padding: 112px 15px 82px;
 }
+
 
 .advantage-sup-title {
     font-family: "Montserrat", sans-serif;
@@ -50,10 +51,14 @@ body {
     margin-bottom: 10px;
 }
 
-.advantage > p {
+.advantage-text {
+    margin-bottom: 60px;
+}
+
+.advantage-text p {
     font-weight: 400;
     line-height: 1.43;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
 }
 
 .advantage-items {
@@ -63,11 +68,12 @@ body {
 }
 
 .advantage-item {
-    max-width: 22%;
+    max-width: 230px;
     display: inline-block;
     margin: 0 15px;
     padding: 30px 40px;
     background-color: #fff;
+    margin-bottom: 20px;
 }
 
 .advantage-item img {
