@@ -1,0 +1,37 @@
+.montserrat-light {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+}
+  
+/* @font-face {
+  font-family: "Circular Std";
+  src: url('../fonts/CircularStd-Book.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url('../fonts/CircularStd-Bold.woff2') format("woff2");
+  font-weight: 700;
+  font-style: normal;
+} */
