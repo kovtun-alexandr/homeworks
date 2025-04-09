@@ -1,0 +1,152 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* Header */
+
+.header-block {
+    font-weight: 700;
+}
+
+.header-content {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.header-content h1 {
+    font-size: 26px;
+    display: inline-block;
+    padding: 15px 40px;
+}
+
+/* Maim */
+
+/* Nature */
+
+.nature img {
+    width: 100%;
+}
+
+.nature-wrap {
+    margin-top: -20px;
+}
+
+.nature-wrap p {
+    color: #fff;
+    display: inline-block;
+}
+
+/* Icons */
+
+.icons {
+    padding: 35px 0;
+}
+
+.icons-wrap > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.icons-item img {
+    max-width: 84px;
+}
+
+.icons-item p {
+    display: inline-block;
+}
+
+/* Image-man */
+
+.man {
+    padding: 35px 0;
+}
+
+.man-wrap img {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 30% 0% 30% 0% / 30% 0% 30% 0%;
+}
+
+.man-wrap p {
+    display: inline-block;
+}
+
+/* People */
+
+.people {
+    padding: 30px 0 60px;
+}
+
+.people img {
+    width: 100%;
+}
+
+.people p {
+    padding: 0 15px;
+    margin-top: -30px;
+    color: #fff;
+    text-align: right;
+}
+
+.people-icons {
+    padding: 30px 0;
+    background-color: #6f7c72;
+
+}
+
+.people-icons img {
+    width: 80px;
+    height: 80px;
+}
+
+.people-icons p {
+    color: #fff;
+}
+
+/* Footer */
+
+.footer-wrap {
+    padding: 30px 0;
+}
+
+.footer-items > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer-item img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.footer-item a:hover {
+    color: red;
+}
+
+.footer-item a:hover img {
+   transform: scale(1.2);
+}
+
+.footer-wrap .container > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer-copy {
+    text-align: center;
+}
