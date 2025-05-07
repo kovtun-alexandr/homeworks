@@ -1,0 +1,289 @@
+@import url("reset.css");
+/* @import url("fonts.css"); */
+
+
+/* Fonts */
+
+.inter-regular {
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-semibold {
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.inter-bold {
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Fonts end */
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: #4f4f4f;
+    font-weight: 400;
+    line-height: 1.26;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+[class*="__container"] {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-inline: 15px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper main {
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.title span {
+    font-weight: 700;
+}
+
+.title--white {
+    color: #fff;
+}
+
+.title--purple {
+    color: #412672;
+}
+
+/* Header */
+
+.header__body {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.header__title {
+    font-size: 26px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 15px 40px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.header__title:hover {
+    transform: scale(2);
+}
+
+/* Maim */
+
+/* Teachers */
+
+.teachers {
+    background: #412672;
+    padding: 61px 0 102px;
+
+}
+
+.teachers__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.teachers__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item-teachers {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 386px;
+    padding: 20px;
+    background: #fff;
+    gap: 16px;
+    transition: .3s;
+}
+
+.item-teachers:hover {
+    background: #FFBE48;
+}
+
+.item-teachers__title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+}
+
+.item-teachers__text {
+    flex-grow: 1;
+}
+
+.item-teachers__link {
+    display: inline-flex;
+    align-self: flex-start;
+    position: relative;
+    color: #FE3F3F;
+}
+
+.item-teachers__link::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #FE3F3F;
+    transition: .3s;
+}
+
+.item-teachers__link:hover::after {
+    width: 100%;
+}
+
+/* Best Faculty */
+
+.best-faculty {
+    background: #fff;
+    padding: 55px 0 72px;
+}
+
+.container--size {
+    max-width: 1550px;
+}
+
+.best-faculty__inner {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 90px
+}
+
+.description-faculty {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex: 0 1 518px;
+    gap: 20px;
+}
+
+.description-faculty__text {
+    color: #412672;
+}
+.description-faculty__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+.description-faculty__item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.description-faculty__item::before {
+    content: '';
+    display: flex;
+    align-self: flex-start;
+    flex-shrink: 0;
+    width: 21px;
+    height: 21px;
+    background: url('../img/check.svg') 0 0 / 100% no-repeat;
+}
+
+.best-faculty__image {
+    display: flex;
+    flex: 0 1 754px;
+}
+
+/* Awards */
+
+.awards {
+    background: #412672;
+    padding: 70px 0;
+}
+
+.awards__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+}
+
+.awards__text {
+    font-size: 24px;
+    text-align: center;
+}
+
+.awards__text span {
+    font-weight: 700;
+}
+
+.awards__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.iten-awards {
+    display: flex;
+    gap: 10px;
+}
+
+.iten-awards__image {
+    display: flex;
+    flex: 0 0 70px;
+}
+
+.iten-awards__image--size {
+    flex-basis: 80px;
+}
+
+.description-awards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.description-awards__count {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Footer */
+
+/* .footer {
+    background: #412672;
+    color: #fff;
+} */
+
+.footer__inner {
+    padding: 30px 0;
+}
+
+.footer__text {
+    text-align: center;
+}
