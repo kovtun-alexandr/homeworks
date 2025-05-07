@@ -6,21 +6,18 @@
 
 .inter-regular {
     font-family: "Inter";
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
 .inter-semibold {
     font-family: "Inter";
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
 }
 
 .inter-bold {
     font-family: "Inter";
-    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
 }
