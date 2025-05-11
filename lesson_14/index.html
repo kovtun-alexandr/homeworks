@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet">
+    <!-- Font and -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework #14</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__inner">
+                    <div class="header__body">
+                        <h1 class="header__title">Homework #14</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <div class="practice">
+                <div class="practice__container">
+                    <div class="practice__inner">
+                        <form class="form" action="#" method="get" enctype="multipart/form-data">
+                            <div class="form__line">
+                                <label class="form__label" for="fname">Enter your name:</label>
+                                <input class="form__input" id="fname" type="text" name="username"
+                                    placeholder="Your name" value="" autocomplete="off" minlength="3" maxlength="25"
+                                    required>
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="flname">Enter your last name:</label>
+                                <input class="form__input" id="flname" type="text" name="lastname"
+                                    placeholder="Your last name" value="" autocomplete="off" disabled>
+                            </div>
+                            <div class="form__line">
+                                <input class="form__input" type="hidden" name="_charset_">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="fpsw">Enter your password:</label>
+                                <input class="form__input" id="fpsw" type="password" name="password" autocomplete="off"
+                                    required>
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="fnumber">Enter at least 3 numbers from 0 to 999:</label>
+                                <input class="form__input" id="fnumber" type="number" name="username"
+                                    placeholder="Enter numbers" min="0" max="999" autocomplete="off">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="femail">Enter E-mail:</label>
+                                <input class="form__input" id="femail" type="email" name="email"
+                                    placeholder="Enter your E-mail" autocomplete="off" required>
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="fphone">Enter phone:</label>
+                                <input class="form__input" id="fphone" type="tel" name="phone"
+                                    placeholder="Enter your phone" value="+380660000000" autocomplete="off" required>
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="fsearch">Search the site:</label>
+                                <input class="form__input" id="fsearch" type="search" name="q" autocomplete="off">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="furl">Enter an https:// URL:</label>
+                                <input class="form__input" type="url" name="url" id="furl"
+                                    placeholder="https://example.com" autocomplete="off" required>
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="fdatemin">Enter a date after 2000-01-01:</label>
+                                <input class="form__input" type="date" id="fdatemin" name="datemin" min="2000-01-02"
+                                    autocomplete="off">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="fdatemax">Enter a date before 1980-01-01:</label>
+                                <input class="form__input" type="date" id="fdatemax" name="datemax" max="1979-12-31"
+                                    autocomplete="off">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="fappointment">Choose a time for your meeting:</label>
+                                <input class="form__input" type="time" id="fappointment" name="appointment" min="09:00"
+                                    max="18:00" required>
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="fcamp-week">Choose a week in May or June:</label>
+                                <input class="form__input" type="week" name="week" id="fcamp-week" min="2024-W18"
+                                    max="2024-W26" required>
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="fstart">Start month:</label>
+                                <input class="form__input" type="month" id="fstart" name="start" min="2025-03"
+                                    value="2025-05">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="fmeeting-time">Choose a time for your
+                                    appointment:</label>
+                                <input class="form__input" type="datetime-local" id="fmeeting-time" name="meeting-time"
+                                    value="2025-05-09T16:45" min="2025-05-07T00:00" max="2025-06-14T00:00">
+                            </div>
+                            <div class="form__line color">
+                                <label class="color__label" for="fcolor">Choose color:</label>
+                                <input class="color__input" id="fcolor" type="color" name="color" autocomplete="off">
+                            </div>
+                            <div class="form__line check">
+                                <div class="check__line">
+                                    <label class="check__label" for="fckeck-1">Checkbox #1</label>
+                                    <input class="check__input" type="checkbox" id="fckeck-1" name="check-1" checked>
+                                </div>
+                                <div class="check__line">
+                                    <label class="check__label" for="fckeck-2">Checkbox #2</label>
+                                    <input class="check__input" type="checkbox" id="fckeck-2" name="check-2">
+                                </div>
+                                <div class="check__line">
+                                    <label class="check__label" for="fckeck-3">Checkbox #3</label>
+                                    <input class="check__input" type="checkbox" id="fckeck-3" name="check-3">
+                                </div>
+                                <div class="check__line">
+                                    <label class="check__label" for="fckeck-4">Checkbox #4</label>
+                                    <input class="check__input" type="checkbox" id="fckeck-4" name="check-4">
+                                </div>
+                            </div>
+                            <div class="form__line radio">
+                                <div class="radio__line">
+                                    <label class="radio__label" for="fcat">Cat</label>
+                                    <input class="radio__input" type="radio" id="fcat" name="pet" value="cat">
+                                </div>
+                                <div class="radio__line">
+                                    <label class="radio__label" for="fdog">Dog</label>
+                                    <input class="radio__input" type="radio" id="fdog" name="pet" value="dog" checked>
+                                </div>
+                                <div class="radio__line">
+                                    <label class="radio__label" for="fhamster">Hamster</label>
+                                    <input class="radio__input" type="radio" id="fhamster" name="pet" value="hamster">
+                                </div>
+                            </div>
+                            <div class="form__line">
+                                <input type="range" value="30" min="0" max="100" step="10">
+                            </div>
+                            <div class="form__line">
+                                <input type="file" name="file" accept="image/png, image/jpeg" multiple>
+                            </div>
+                            <div class="form__line">
+                                <select name="list">
+                                    <option value="item-1">Item #1</option>
+                                    <option value="item-2">Item #2</option>
+                                    <option value="item-3" selected>Item #3</option>
+                                    <option value="item-4">Item #4</option>
+                                </select>
+                            </div>
+                            <div class="form__line">
+                                <textarea name="messege" autocomplete="off" rows="5"></textarea>
+                            </div>
+                            <div class="form__line">
+                                <input class="btn" type="reset">
+                                <input class="btn" type="button" value="Submit form using button type">
+                                <input class="btn" type="submit" value="Submit form using submit type">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout">
+                <div class="checkout__container">
+                    <form action="#" class="billing">
+                        <div class="billing__info info-billing">
+                            <h2 class="title">Billing Information</h2>
+                            <div class="info-billing__body">
+                                <div class="info-billing__row">
+                                    <div class="info-billing__column">
+                                        <label for="first-name" class="info-billing__label">First name</label>
+                                        <input type="text" name="first-name" id="first-name" class="info-billing__input"
+                                            placeholder="Your first name" required>
+                                    </div>
+                                    <div class="info-billing__column">
+                                        <label for="last-name" class="info-billing__label">Last name</label>
+                                        <input type="text" name="last-name" id="last-name" class="info-billing__input"
+                                            placeholder="Your last name" required>
+                                    </div>
+                                    <div class="info-billing__column">
+                                        <label for="company-name" class="info-billing__label">Company Name
+                                            <span>(optional)</span></label>
+                                        <input type="text" name="company-name" id="company-name"
+                                            class="info-billing__input" placeholder="Company name">
+                                    </div>
+                                </div>
+                                <div class="info-billing__row">
+                                    <div class="info-billing__column">
+                                        <label for="street-addres" class="info-billing__label">Street Address</label>
+                                        <input type="text" name="street-addres" id="street-addres"
+                                            class="info-billing__input" placeholder="Street Address" required>
+                                    </div>
+                                </div>
+                                <div class="info-billing__row">
+                                    <div class="info-billing__column">
+                                        <label for="country" class="info-billing__label">Country / Region</label>
+                                        <select class="info-billing__select" name="country" id="country">
+                                            <option value="select">Select</option>
+                                            <option value="france">France</option>
+                                            <option value="german">Germany</option>
+                                            <option value="ua">Ukraine</option>
+                                            <option value="uk">United Kingdom</option>
+                                            <option value="usa">United States of America</option>
+                                        </select>
+                                    </div>
+                                    <div class="info-billing__column">
+                                        <label for="states" class="info-billing__label">States</label>
+                                        <select class="info-billing__select" name="states" id="states">
+                                            <option value="selects">Selects</option>
+                                            <option value="select-1">Select #1</option>
+                                            <option value="select-2">Select #2</option>
+                                            <option value="select-3">Select #3</option>
+                                            <option value="select-4">Select #4</option>
+                                            <option value="select-5">Select #5</option>
+                                        </select>
+                                    </div>
+                                    <div class="info-billing__column">
+                                        <label for="zip-code" class="info-billing__label">Zip Code</label>
+                                        <input type="number" name="zip-code" id="zip-code" class="info-billing__input"
+                                            placeholder="Zip Code" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="info-billing__row">
+                                    <div class="info-billing__column">
+                                        <label for="email" class="info-billing__label">Email</label>
+                                        <input type="email" name="email" id="email" class="info-billing__input"
+                                            placeholder="Email Address" autocomplete="off" required>
+                                    </div>
+                                    <div class="info-billing__column">
+                                        <label for="phone" class="info-billing__label">Phone</label>
+                                        <input type="tel" name="phone" id="phone" class="info-billing__input"
+                                            placeholder="Phone number" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="info-billing__row">
+                                    <div class="info-billing__column custom-checkbox">
+                                        <label for="different-address" class="custom-checkbox__label">Ship to a
+                                            different
+                                            address</label>
+                                        <input type="checkbox" name="different-address" id="different-address"
+                                            class="custom-checkbox__input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-billing__footer">
+                                <h2 class="title">Additional Info</h2>
+                                <div class="info-billing__row">
+                                    <div class="info-billing__column">
+                                        <label for="messege" class="info-billing__label">Order Notes
+                                            <span>(Optional)</span></label>
+                                        <textarea name="messege" id="messege"
+                                            placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="billing__order order-billing">
+                            <div class="order-billing__body">
+                                <h2 class="sub-title">Order Summery</h2>
+                                <ul class="order-billing__list">
+                                    <li class="order-billing__item item-order">
+                                        <div class="item-order__info">
+                                            <div class="item-order__image">
+                                                <img src="img/green_pepper.webp" alt="product">
+                                            </div>
+                                            <h3 class="item-order__title">Green Capsicum</h3>
+                                            <p class="item-order__quantity">x5</p>
+                                        </div>
+                                        <div class="item-order__total">$70.00</div>
+                                    </li>
+                                    <li class="order-billing__item item-order">
+                                        <div class="item-order__info">
+                                            <div class="item-order__image">
+                                                <img src="img/red_pepper.webp" alt="product">
+                                            </div>
+                                            <h3 class="item-order__title">Red Capsicum</h3>
+                                            <p class="item-order__quantity">x1</p>
+                                        </div>
+                                        <div class="item-order__total">$14.00</div>
+                                    </li>
+                                </ul>
+                                <div class="order-billing__subtotal subtotal-order">
+                                    <span class="subtotal-order__title">Subtotal:</span>
+                                    <span class="subtotal-order__total">$84.00</span>
+                                </div>
+                                <div class="order-billing__shipping shipping-order">
+                                    <span class="shipping-order__title">Shipping:</span>
+                                    <span class="shipping-order__total">Free</span>
+                                </div>
+                                <div class="order-billing__result result-order">
+                                    <span class="result-order__title">Total:</span>
+                                    <span class="result-order__whole">$84.00</span>
+                                </div>
+                            </div>
+                            <div class="order-billing__section section-order">
+                                <h2 class="sub-title">Payment Method</h2>
+                                <div class="custom-radio">
+                                    <div class="custom-radio__row">
+                                        <label for="cash" class="custom-radio__label">Cash on Delivery</label>
+                                        <input type="radio" name="payment" id="cash" class="custom-radio__input"
+                                            checked>
+                                    </div>
+                                    <div class="custom-radio__row">
+                                        <label for="paypal" class="custom-radio__label">Paypal</label>
+                                        <input type="radio" name="payment" id="paypal" class="custom-radio__input">
+                                    </div>
+                                    <div class="custom-radio__row">
+                                        <label for="amazon" class="custom-radio__label">Amazon Pay</label>
+                                        <input type="radio" name="payment" id="amazon" class="custom-radio__input">
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" class="button" value="Place Order">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__inner">
+                    <p class="footer__text">&copy; 2025 Olexandr Kovtun</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
