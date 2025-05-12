@@ -210,6 +210,10 @@ body {
     gap: 24px;
 }
 
+.billing input {
+    outline-color: #00B307;
+}
+
 .info-billing {
     max-width: 872px;
     width: 100%;
@@ -373,6 +377,10 @@ body {
     line-height: 1.5;
 }
 
+.order-billing__list > *:not(:last-child){
+    margin-bottom: 2px;
+}
+
 .item-order {
     display: flex;
     flex-direction: row;
@@ -385,6 +393,13 @@ body {
     display: flex;
     align-items: center;
     gap: 6px;
+}
+
+.item-order__link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    outline-color: #00B307;
 }
 
 .item-order__image {
