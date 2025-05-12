@@ -59,6 +59,7 @@ body {
 }
 
 .title span {
+    display: flex;
     font-weight: 700;
 }
 
@@ -99,10 +100,8 @@ body {
 
 }
 
-.teachers__inner {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.teachers__inner > *:not(:last-child) {
+    margin-bottom: 30px;
 }
 
 .teachers__items {
@@ -170,7 +169,6 @@ body {
 
 .best-faculty__inner {
     display: flex;
-    justify-content: flex-end;
     flex-wrap: wrap;
     gap: 90px
 }
@@ -211,6 +209,7 @@ body {
 .best-faculty__image {
     display: flex;
     flex: 0 1 754px;
+    margin-right: -170px;
 }
 
 /* Awards */
@@ -221,18 +220,19 @@ body {
 }
 
 .awards__inner {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
     color: #fff;
 }
 
-.awards__text {
+.awards__inner > *:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.awards__title {
     font-size: 24px;
     text-align: center;
 }
 
-.awards__text span {
+.awards__title span {
     font-weight: 700;
 }
 
