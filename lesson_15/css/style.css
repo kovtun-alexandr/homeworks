@@ -148,6 +148,7 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .product__sale {
@@ -159,6 +160,7 @@ body {
     border-radius: 4px;
     color: #FFF;
     padding: 3px 8px;
+    z-index: 2;
 }
 
 .product__header {
@@ -170,6 +172,7 @@ body {
     right: 11px;
     opacity: 0;
     transition: .3s;
+    z-index: 2;
 }
 
 .heart,
@@ -191,6 +194,8 @@ body {
 }
 
 .product__image {
+    transition: .3s;
+    width: 100%;
     object-fit: contain;
     aspect-ratio: 254/230;
 }
@@ -252,6 +257,10 @@ body {
 
 .product:hover .product__header {
     opacity: 1;
+}
+
+.product:hover .product__image {
+    transform: scale(1.05);
 }
 
 .product:hover .product__title {
@@ -368,9 +377,16 @@ body {
     max-width: calc(50% - 12px);
 }
 
+.item-news__aside {
+    position: relative;
+    overflow: hidden;
+}
+
 .item-news__image {
+    width: 100%;
     object-fit: cover;
     aspect-ratio: 424/324;
+    transition: .3s;
 }
 .item-news__data {
     position: absolute;
@@ -378,15 +394,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: -80px;
     left: 24px;
-    width: 58px;
-    height: 58px;
+    bottom: 24px;
+    max-width: 58px;
     background: #FFF;
     font-size: 20px;
     font-weight: 500;
     border-radius: 4px;
     line-height: 1.26;
+    padding: 9px 16px;
+    z-index: 2;
 }
 
 .item-news__data span {
@@ -397,7 +414,6 @@ body {
 }
 
 .item-news__body {
-    position: relative;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -453,6 +469,10 @@ body {
 
 .item-news:hover .item-news__title {
     color: #2C742F;
+}
+
+.item-news:hover .item-news__image {
+    transform: scale(1.05);
 }
 
 @media (max-width: 901px) {
