@@ -1,0 +1,509 @@
+@import url("reset.css");
+/* @import url("fonts.css"); */
+
+
+/* Fonts */
+
+.poppins-regular {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Fonts end */
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #4f4f4f;
+    font-weight: 400;
+    line-height: 1.26;
+    color: #1a1a1a;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+[class*="__container"] {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding-inline: 15px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper main {
+    flex-grow: 1;
+}
+
+/* Header */
+
+.header__body {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.header__title {
+    font-size: 26px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 15px 40px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.header__title:hover {
+    transform: scale(2);
+}
+
+/* Maim */
+
+/* Featured */
+
+.featured {
+    padding: 30px 0;
+}
+
+.featured__inner > *:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    align-self: baseline;
+    flex-shrink: 0;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #00B207;
+    transition: .3s;
+}
+
+.link svg {
+    fill: #00B207;
+    transform: rotate(180deg);
+}
+
+.link:hover {
+    color: #2C742F;
+    text-shadow: 0px 1px 10px rgba(0, 178, 7, .5);
+}
+
+.link:hover svg {
+    fill: #2C742F;
+    filter: drop-shadow( 0px 0px 4px rgba(0, 178, 7, .7));
+}
+
+.link--right {
+    align-self: center;
+}
+
+.featured__items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    flex: 1 1 264px;
+    max-width: 350px;
+    border: 1px solid #E6E6E6;
+    transition: .3s;
+}
+
+.product__aside {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.product__sale {
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    line-height: 1.5;
+    background: #EA4B48;
+    border-radius: 4px;
+    color: #FFF;
+    padding: 3px 8px;
+}
+
+.product__header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    top: 11px;
+    right: 11px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.heart,
+.wiev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #E6E6E6;
+    background: #FFF;
+    transition: .3s;
+}
+
+.heart svg,
+.wiev svg {
+    stroke: #1a1a1a;
+}
+
+.product__image {
+    object-fit: contain;
+    aspect-ratio: 254/230;
+}
+
+.product__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+}
+
+.product__body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product__title {
+    color: #4D4D4D;
+}
+
+.price {
+    display: flex;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.price__new {
+    font-weight: 500;
+}
+
+.price__old {
+    color: #999;
+    text-decoration: line-through;
+}
+.rating {
+    display: flex;
+}
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #F2F2F2;
+    transition: .3s;
+}
+
+.cart svg {
+    stroke: #1a1a1a;
+    transition: .3s;
+}
+
+.product:hover {
+    border: 1px solid #2C742F;
+    box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+}
+
+.product:hover .product__header {
+    opacity: 1;
+}
+
+.product:hover .product__title {
+    color: #00B207;
+}
+
+.product:hover .cart {
+    background: #00B207;
+}
+
+.product:hover .cart svg {
+    stroke: #FFF;
+}
+
+.product:hover .cart:hover {
+    background: #2C742F;
+    box-shadow: 0px 0px 5px 0px #00B207;
+}
+
+.heart:hover,
+.wiev:hover {
+    border: 1px solid #00B207;
+    box-shadow: 0px 0px 5px 0px #00B207;
+    background: #00B207;
+}
+
+.heart:hover svg,
+.wiev:hover svg {
+    fill: #00B207;
+    stroke: #FFF;
+}
+
+@media (max-width: 1024px) {
+    .product__header {
+        opacity: 1;
+    }
+
+    .product__title {
+        font-size: 16px;
+    }
+
+    .cart,
+    .heart,
+    .wiev {
+        width: 50px;
+        height: 50px;
+    }
+
+    .cart svg,
+    .heart svg,
+    .wiev svg {
+        transform: scale(1.3);
+    }
+}
+
+@media (max-width: 821px) {
+    .featured {
+        padding: 15px 0;
+    }
+
+    .featured__inner > *:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .product {
+        max-width: 50%;
+    }
+
+    .title-box {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 557px) {
+    .title-box {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .link--right {
+        align-self: end;
+    }
+    .product {
+        max-width: 100%;
+    }
+}
+
+/* News */
+
+.news {
+    padding: 30px 0;
+}
+
+.news__inner > *:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.title--center {
+    text-align: center;
+}
+
+.news__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.item-news {
+    display: flex;
+    flex: 1 1 424px;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid #E6E6E6;
+    overflow: hidden;
+    max-width: calc(50% - 12px);
+}
+
+.item-news__image {
+    object-fit: cover;
+    aspect-ratio: 424/324;
+}
+.item-news__data {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -80px;
+    left: 24px;
+    width: 58px;
+    height: 58px;
+    background: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 4px;
+    line-height: 1.26;
+}
+
+.item-news__data span {
+    font-size: 12px;
+    letter-spacing: .36px;
+    text-transform: uppercase;
+    color: #808080;
+}
+
+.item-news__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 10px;
+    padding: 24px;
+    line-height: 1.5;
+}
+
+.info-news {
+    display: flex;
+    gap: 16px;
+    color: #666;
+}
+
+.info-news__tema,
+.info-news__autor,
+.info-news__comments {
+    display: flex;
+    gap: 4px;
+}
+.info-news__tema::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url('../img/tag.svg') 0 0 / 100% no-repeat;
+}
+.info-news__autor::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url('../img/avatar.svg') 0 0 / 100% no-repeat;
+}
+.info-news__comments::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url('../img/comment.svg') 0 0 / 100% no-repeat;
+}
+.item-news__title {
+    font-size: 18px;
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+.item-news__title:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.item-news:hover {
+    border: 1px solid transparent;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
+}
+
+.item-news:hover .item-news__title {
+    color: #2C742F;
+}
+
+@media (max-width: 901px) {
+    .news {
+        padding: 15px 0;
+    }
+
+    .news__inner > *:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .news__items {
+        gap: 15px;
+    }
+
+    .item-news {
+        max-width: calc(50% - 7.5px);
+    }
+
+    .info-news {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .item-news {
+        max-width: 100%;
+    }
+    
+}
+
+@media (max-width: 390px) {
+    .item-news__body {
+        padding: 15px;
+    }
+    .info-news__comments {
+        display: none;
+    }
+}
+
+/* Footer */
+
+/* .footer {
+    background: #412672;
+    color: #fff;
+    } */
+
+.footer__inner {
+    padding: 30px 0;
+}
+
+.footer__text {
+    text-align: center;
+}
