@@ -203,7 +203,8 @@ body {
 .product__inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-grow: 1;
+    gap: 5px;
     padding: 7px;
 }
 
@@ -214,7 +215,9 @@ body {
 }
 
 .product__title {
+    display: flex;
     color: #4D4D4D;
+    flex-grow: 1;
 }
 
 .price {
@@ -238,7 +241,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
+    align-self: center;
+    flex: 0 0 40px;
     height: 40px;
     border-radius: 50%;
     background: #F2F2F2;
