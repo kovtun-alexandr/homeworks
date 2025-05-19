@@ -303,7 +303,7 @@ body {
 
 @media (max-width: 1150px) {
     .product {
-        flex: 0 1 calc(100% / 4);
+        flex: 0 1 calc((100% / 4) + 1px);
     }
 
     .product__header {
@@ -341,7 +341,7 @@ body {
     }
 
     .product {
-        flex: 0 1 calc(100% / 3);
+        flex: 0 1 calc((100% / 3) + 1px);
     }
 
     .title-box {
@@ -351,7 +351,7 @@ body {
 
 @media (max-width: 690px) {
     .product {
-        flex: 0 1 calc(100% / 2);
+        flex: 0 1 calc((100% / 2) + 1px);
     }
 }
 
