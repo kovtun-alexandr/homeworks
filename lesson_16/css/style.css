@@ -218,7 +218,7 @@ body {
         padding-bottom: 20px;
     }
 	.menu__list {
-		column-gap: 20px;
+        column-gap: 20px;
 	}
     .logo-header {
         flex-grow: 1;
@@ -253,11 +253,14 @@ body {
         top: 50%;
         transform: translateY(-50%);
     }
+    body.menu-open {
+        overflow: hidden;
+    }
     .menu__body {
         position: fixed;
         overflow: auto;
         width: 100%;
-        height: 100%;
+        height: calc(100% - 85px);
         top: 0;
         right: -100%;
         z-index: 3;
