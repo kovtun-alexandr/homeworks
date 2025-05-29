@@ -343,11 +343,12 @@ body {
         fill: #00B207;
     }
 
-    .product:hover .title-card {
+    .product:hover .title-card a {
         color: #00B207;
     }
 
-    .product .title-card:hover {
+    .product .title-card a:hover,
+    .title-card a:hover {
         color: #2C742F;
     }
 
@@ -746,6 +747,9 @@ body {
     .title-delight {
         font-size: 50px;
     }
+    .product-delight__body {
+        gap: 10px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -756,6 +760,19 @@ body {
     .title-delight {
         font-size: 45px;
         text-align: center;
+    }
+    .product-delight__body {
+        gap: 5px;
+    }
+    .product-delight__actions {
+        grid-template-columns: 1fr;
+        position: relative;
+        right: 2px;
+    }
+    .product-delight__heart {
+        position: absolute;
+        top: -49px;
+        background: rgba(248, 243, 236, .8);
     }
 }
 
@@ -777,9 +794,6 @@ body {
 @media (max-width: 687.98px) {
     .title-delight {
         font-size: 36px;
-    }
-    .product-delight__actions {
-        grid-template-columns: 1fr;
     }
     .product-delight__title,
     .product-delight__price {
