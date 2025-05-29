@@ -474,7 +474,7 @@ body {
 
 .product-small__rating {
     display: grid;
-    grid-template-columns: repeat(5, 16px);
+    grid-template-columns: repeat(auto-fill, minmax(16px, auto));
 }
 
 .product-small__footer {
@@ -506,7 +506,7 @@ body {
 
     .product-small__item:hover .product-small__footer {
         opacity: 1;
-        bottom: 13px;
+        bottom: 15px;
     }
 
     .product-small__item:hover .cart {
