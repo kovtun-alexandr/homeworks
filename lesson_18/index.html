@@ -46,8 +46,9 @@
                                 <div class="autor__picture"><img src="img/autor_1.webp" alt="image"></div>
                                 <figcaption class="autor__info">
                                     <h2 class="autor__title">Cameron Williamson</h2>
-                                    <time class="autor__published"><span>4 April, 2021</span><span>6 min
-                                            read</span></time>
+                                    <p class="autor__published">
+                                        <time datetime="2021-04-04">4 April, 2021</time><span>6 min read</span>
+                                    </p>
                                 </figcaption>
                             </figure>
                             <div class="autor__socials social">
@@ -177,106 +178,158 @@
                     <section class="blog__comments coments-blog">
                         <h2 class="coments-blog__title title-large">Comments</h2>
                         <div class="coments-blog__items">
-                            <article class="coments-blog__item item-coment">
-                                <figure class="item-coment__body">
-                                    <div class="item-coment__picture">
-                                        <img src="img/autor_2.webp" alt="image">
-                                    </div>
-                                    <div class="item-coment__info info-coment">
-                                        <figcaption class="info-coment__header">
-                                            <h3 class="info-coment__title">Annette Black</h3>
-                                            <time class="info-coment__published">26 Apr, 2021</time>
+
+                            <!-- С початку зробив блок таким чином, але фалідатор лдаявся на div.item-coment__description, я
+                            його прибрав лишив тільки тег <p>, але валідатор всеодно видав помилку!
+
+                                <article class="coments-blog__item item-coment">
+                                    <figure class="item-coment__body">
+                                        <div class="item-coment__picture">
+                                            <img src="img/autor_2.webp" alt="image">
+                                        </div>
+                                        <figcaption class="item-coment__header">
+                                            <h3 class="item-coment__title">Annette Black</h3>
+                                            <div class="item-coment__published">
+                                                <time datetime="2021-04-26">26 Apr, 2021</time>
+                                            </div>
                                         </figcaption>
-                                        <div class="info-coment__body">
+                                        <div class="item-coment__description">
                                             <p>
-                                                In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla
-                                                volutpat, metus eu aliquam malesuada, elit libero venenatis urna,
+                                                In a nisi commodo, porttitor ligula consequat, tincidunt dui.
+                                                Nulla
+                                                volutpat, metus eu aliquam malesuada, elit libero venenatis
+                                                urna,
                                                 consequat
                                                 maximus arcu diam non diam.
                                             </p>
                                         </div>
+                                    </figure>
+                                </article>
+
+                             Вдалося вирішити цю помилку тіль винести div за межі
+                            <figure>, фле у такому випадку біда зі стилями, тому я переробив без <figure> > <figcaption>
+
+                                <article class="coments-blog__item item-coment">
+                                    <figure class="item-coment__body">
+                                        <div class="item-coment__picture">
+                                            <img src="img/autor_3.webp" alt="image">
+                                        </div>
+                                        <figcaption class="item-coment__header">
+                                            <h3 class="item-coment__title">Annette Black</h3>
+                                            <div class="item-coment__published">
+                                                <time datetime="2021-04-26">26 Apr, 2021</time>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="item-coment__descriptio">
+                                        <p>
+                                            In a nisi commodo, porttitor ligula consequat, tincidunt dui.
+                                                Nulla
+                                                volutpat, metus eu aliquam malesuada, elit libero venenatis
+                                                urna,
+                                                consequat
+                                                maximus arcu diam non diam.
+                                        </p>
                                     </div>
-                                </figure>
+                                </article> -->
+
+                            <article class="coments-blog__item item-coment">
+                                <div class="item-coment__body">
+                                    <div class="item-coment__picture">
+                                        <img src="img/autor_2.webp" alt="image">
+                                    </div>
+                                    <div class="item-coment__header">
+                                        <h3 class="item-coment__title">Annette Black</h3>
+                                        <div class="item-coment__published">
+                                            <time datetime="2021-04-26">26 Apr, 2021</time>
+                                        </div>
+                                    </div>
+                                    <div class="item-coment__descriptio">
+                                        <p>
+                                            In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla
+                                            volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat
+                                            maximus arcu diam non diam.
+                                        </p>
+                                    </div>
+                                </div>
                             </article>
                             <article class="coments-blog__item item-coment">
-                                <figure class="item-coment__body">
+                                <div class="item-coment__body">
                                     <div class="item-coment__picture">
                                         <img src="img/autor_3.webp" alt="image">
                                     </div>
-                                    <div class="item-coment__info info-coment">
-                                        <figcaption class="info-coment__header">
-                                            <h3 class="info-coment__title">Devon Lane</h3>
-                                            <time class="info-coment__published">24 Apr, 2021</time>
-                                        </figcaption>
-                                        <div class="info-coment__body">
-                                            <p>
-                                                Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc
-                                                sit
-                                                amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam
-                                                euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed
-                                                scelerisque, est eget aliquam venenatis, est sem tempor eros.
-                                            </p>
+                                    <div class="item-coment__header">
+                                        <h3 class="item-coment__title">Devon Lane</h3>
+                                        <div class="item-coment__published">
+                                            <time datetime="2021-04-24">24 Apr, 2021</time>
                                         </div>
                                     </div>
-                                </figure>
+                                    <div class="item-coment__descriptio">
+                                        <p>
+                                            Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit
+                                            amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam
+                                            euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed
+                                            scelerisque, est eget aliquam venenatis, est sem tempor eros.
+                                        </p>
+                                    </div>
+                                </div>
                             </article>
                             <article class="coments-blog__item item-coment">
-                                <figure class="item-coment__body">
+                                <div class="item-coment__body">
                                     <div class="item-coment__picture">
                                         <img src="img/autor_4.webp" alt="image">
                                     </div>
-                                    <div class="item-coment__info info-coment">
-                                        <figcaption class="info-coment__header">
-                                            <h3 class="info-coment__title">Jacob Jones</h3>
-                                            <time class="info-coment__published">20 Apr, 2021</time>
-                                        </figcaption>
-                                        <div class="info-coment__body">
-                                            <p>
-                                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                                                cubilia curae.
-                                            </p>
+                                    <div class="item-coment__header">
+                                        <h3 class="item-coment__title">Jacob Jones</h3>
+                                        <div class="item-coment__published">
+                                            <time datetime="2021-04-20">20 Apr, 2021</time>
                                         </div>
                                     </div>
-                                </figure>
+                                    <div class="item-coment__descriptio">
+                                        <p>
+                                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                            cubilia curae.
+                                        </p>
+                                    </div>
+                                </div>
                             </article>
                             <article class="coments-blog__item item-coment">
-                                <figure class="item-coment__body">
+                                <div class="item-coment__body">
                                     <div class="item-coment__picture">
                                         <img src="img/autor_5.webp" alt="image">
                                     </div>
-                                    <div class="item-coment__info info-coment">
-                                        <figcaption class="info-coment__header">
-                                            <h3 class="info-coment__title">Jane Cooper</h3>
-                                            <time class="info-coment__published">18 Apr, 2021</time>
-                                        </figcaption>
-                                        <div class="info-coment__body">
-                                            <p>
-                                                Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum
-                                                elit, a
-                                                volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac,
-                                                volutpat imperdiet ex.
-                                            </p>
+                                    <div class="item-coment__header">
+                                        <h3 class="item-coment__title">Jane Cooper</h3>
+                                        <div class="item-coment__published">
+                                            <time datetime="2021-04-18">18 Apr, 2021</time>
                                         </div>
                                     </div>
-                                </figure>
+                                    <div class="item-coment__descriptio">
+                                        <p>
+                                            Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a
+                                            volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac,
+                                            volutpat imperdiet ex.
+                                        </p>
+                                    </div>
+                                </div>
                             </article>
                             <article class="coments-blog__item item-coment">
-                                <figure class="item-coment__body">
+                                <div class="item-coment__body">
                                     <div class="item-coment__picture">
                                         <img src="img/autor_6.webp" alt="image">
                                     </div>
-                                    <div class="item-coment__info info-coment">
-                                        <figcaption class="info-coment__header">
-                                            <h3 class="info-coment__title">Darrell Steward</h3>
-                                            <time class="info-coment__published">7 Apr, 2021</time>
-                                        </figcaption>
-                                        <div class="info-coment__body">
-                                            <p>
-                                                Nulla molestie interdum ultricies.
-                                            </p>
+                                    <div class="item-coment__header">
+                                        <h3 class="item-coment__title">Darrell Steward</h3>
+                                        <div class="item-coment__published">
+                                            <time datetime="2021-04-07">7 Apr, 2021</time>
                                         </div>
                                     </div>
-                                </figure>
+                                    <div class="item-coment__descriptio">
+                                        <p>
+                                            Nulla molestie interdum ultricies.
+                                        </p>
+                                    </div>
+                                </div>
                             </article>
                         </div>
                         <button class="button-inverse">Load More</button>
@@ -352,7 +405,9 @@
                                 </div>
                                 <div class="tem-recently__body">
                                     <h3 class="tem-recently__title">Curabitur porttitor orci eget nequ accumsan.</h3>
-                                    <time class="tem-recently__published">Apr 25, 2021</time>
+                                    <div class="tem-recently__published">
+                                        <time datetime="2021-04-25">Apr 25, 2021</time>
+                                    </div>
                                 </div>
                             </article>
                             <article class="recently-info__item tem-recently">
@@ -361,7 +416,9 @@
                                 </div>
                                 <div class="tem-recently__body">
                                     <h3 class="tem-recently__title">Donec mattis arcu faucibus suscipit viverra.</h3>
-                                    <time class="tem-recently__published">Apr 25, 2021</time>
+                                    <div class="tem-recently__published">
+                                        <time datetime="2021-04-25">Apr 25, 2021</time>
+                                    </div>
                                 </div>
                             </article>
                             <article class="recently-info__item tem-recently">
@@ -371,7 +428,9 @@
                                 <div class="tem-recently__body">
                                     <h3 class="tem-recently__title">Quisque posuere tempus rutrum. Integer velit ex.
                                     </h3>
-                                    <time class="tem-recently__published">Apr 25, 2021</time>
+                                    <div class="tem-recently__published">
+                                        <time datetime="2021-04-25">Apr 25, 2021</time>
+                                    </div>
                                 </div>
                             </article>
                         </div>
