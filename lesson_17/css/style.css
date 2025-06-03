@@ -362,21 +362,8 @@ body {
         opacity: 1;
     }
 
-    .cart,
-    .heart,
-    .view {
-        width: 50px;
-        height: 50px;
-    }
-
     .cart {
         background: #00B207;
-    }
-
-    .cart svg,
-    .heart svg,
-    .view svg {
-        transform: scale(1.2);
     }
 
     .cart svg {
@@ -397,15 +384,12 @@ body {
         margin-bottom: 0;
     }
 
-    .body-product__item {
-        gap: 15px;
+    .body-product__items {
+        grid-template-columns: repeat(auto-fill, minmax(min(208px, 100%), 1fr));
     }
 
-    .cart,
-    .heart,
-    .view {
-        width: 45px;
-        height: 45px;
+    .body-product__item {
+        gap: 15px;
     }
 }
 
@@ -632,6 +616,7 @@ body {
     width: 100%;
     height: 100%;
     aspect-ratio: 401/427;
+    background: #cecece;
     overflow: hidden;
 }
 
