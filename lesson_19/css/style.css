@@ -114,7 +114,7 @@ body {
 }
 
 .description__image img {
-    box-sizing: 100%;
+    block-size: 100%;
     object-fit: contain;
 }
 
