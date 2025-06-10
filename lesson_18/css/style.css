@@ -199,53 +199,53 @@ body {
     margin-bottom: 24px;
 }
 
-.header-blog__aside {
+.header-blog__image {
     border-radius: 8px;
     aspect-ratio: 873 / 600;
     overflow: hidden;
 }
 
-.header-blog__aside img {
+.header-blog__image img {
     height: 100%;
     object-fit: cover;
 }
 
-.header-blog__aside:not(:last-child) {
+.header-blog__image:not(:last-child) {
     margin-bottom: 32px;
 }
 
-.info-blog {
+.header-blog {
     display: flex;
     flex-wrap: wrap;
     gap: 8px 16px;
 }
 
-.info-blog:not(:last-child) {
+.header-blog:not(:last-child) {
     margin-bottom: 8px;
 }
 
-.info-blog__item {
+.header-blog__item {
     display: flex;
     align-items: center;
     gap: 4px;
     color: #4D4D4D;
 }
 
-.info-blog__item::before {
+.header-blog__item::before {
     content: '';
     width: 20px;
     height: 20px;
 }
 
-.info-blog__item--theme::before {
+.header-blog__item--theme::before {
     background: url('../img/icons/tag.svg') 0 0 / 100% no-repeat;
 }
 
-.info-blog__item--autoe::before {
+.header-blog__item--autoe::before {
     background: url('../img/icons/avatar.svg') 0 0 / 100% no-repeat;
 }
 
-.info-blog__item--comments::before {
+.header-blog__item--comments::before {
     background: url('../img/icons/comment.svg') 0 0 / 100% no-repeat;
 }
 
@@ -734,13 +734,13 @@ body {
     gap: 16px;
 }
 
-.tem-recently {
+.item-recently__body {
     display: flex;
     align-items: start;
     gap: 12px;
 }
 
-.tem-recently__image {
+.item-recently__image {
     max-width: 100px;
     width: 100%;
     aspect-ratio: 100 / 77;
@@ -748,33 +748,33 @@ body {
     overflow: hidden;
 }
 
-.tem-recently__image img {
+.item-recently__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.tem-recently__body {
+.item-recently__info {
     line-height: 1.5;
 }
 
-.tem-recently__title {
+.item-recently__title {
     font-size: 16px;
     font-weight: 500;
 }
 
-.tem-recently__title:not(:last-child) {
+.item-recently__title:not(:last-child) {
     margin-bottom: 8px;
 }
 
-.tem-recently__published {
+.item-recently__published {
     display: flex;
     align-items: center;
     gap: 6px;
     color: #666;
 }
 
-.tem-recently__published::before {
+.item-recently__published::before {
     content: '';
     width: 18px;
     height: 18px;

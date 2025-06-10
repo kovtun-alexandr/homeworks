@@ -21,7 +21,7 @@
             <div class="header__container">
                 <div class="header__inner">
                     <div class="header__body">
-                        <h1 class="header__title">Homework #18</h1>
+                        <h2 class="header__title">Homework #18</h2>
                     </div>
                 </div>
             </div>
@@ -30,17 +30,14 @@
             <div class="page__container">
                 <article class="page__blog blog">
                     <div class="blog__header header-blog">
-                        <div class="header-blog__aside">
-                            <img src="img/orange_main.webp" alt="image">
-                        </div>
-                        <div class="header-blog__info info-blog">
-                            <div class="info-blog__item info-blog__item--theme">Food</div>
-                            <div class="info-blog__item info-blog__item--autoe">By Admin</div>
-                            <div class="info-blog__item info-blog__item--comments">65 Comments</div>
-                        </div>
+                        <img class="header-blog__image" src="img/orange_main.webp" alt="image">
+                        <ul class="header-blog__list">
+                            <li class="header-blog__item header-blog__item--theme">Food</li>
+                            <li class="header-blog__item header-blog__item--autoe">By Admin</li>
+                            <li class="header-blog__item header-blog__item--comments">65 Comments</li>
+                        </ul>
                         <h1 class="header-blog__title title-main">Maecenas tempor urna sed quam mollis, a placerat dui
-                            fringill
-                            Suspendisse.</h1>
+                            fringill Suspendisse.</h1>
                         <div class="header-blog__autor autor">
                             <figure class="autor__body">
                                 <div class="autor__picture"><img src="img/autor_1.webp" alt="image"></div>
@@ -51,43 +48,48 @@
                                     </p>
                                 </figcaption>
                             </figure>
-                            <div class="autor__socials social">
-                                <div class="social__item">
-                                    <a href="#" class="social__link">
-                                        <svg class="social__icon">
+                            <ul class="autor__socials social">
+                                <li class="social__item">
+                                    <a href="#" class="social__link" aria-label="Go to Facebook" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <svg class="social__icon" aria-hidden="true" focusable="false">
                                             <use href="img/icons/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
-                                </div>
-                                <div class="social__item">
-                                    <a href="#" class="social__link">
-                                        <svg class="social__icon">
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link" aria-label="Go to Twitter" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <svg class="social__icon" aria-hidden="true" focusable="false">
                                             <use href="img/icons/sprite.svg#twitter"></use>
                                         </svg>
                                     </a>
-                                </div>
-                                <div class="social__item">
-                                    <a href="#" class="social__link">
-                                        <svg class="social__icon">
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link" aria-label="Go to Pinterest" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <svg class="social__icon" aria-hidden="true" focusable="false">
                                             <use href="img/icons/sprite.svg#pinterest"></use>
                                         </svg>
                                     </a>
-                                </div>
-                                <div class="social__item">
-                                    <a href="#" class="social__link">
-                                        <svg class="social__icon">
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link" aria-label="Go to Itstagram" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <svg class="social__icon" aria-hidden="true" focusable="false">
                                             <use href="img/icons/sprite.svg#instagram"></use>
                                         </svg>
                                     </a>
-                                </div>
-                                <div class="social__item">
-                                    <a href="#" class="social__link">
-                                        <svg class="social__icon">
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link" aria-label="Go to Chain" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <svg class="social__icon" aria-hidden="true" focusable="false">
                                             <use href="img/icons/sprite.svg#chain"></use>
                                         </svg>
                                     </a>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <section class="blog__body body-blog">
@@ -177,7 +179,7 @@
                     </section>
                     <section class="blog__comments coments-blog">
                         <h2 class="coments-blog__title title-large">Comments</h2>
-                        <div class="coments-blog__items">
+                        <ul class="coments-blog__items">
 
                             <!-- С початку зробив блок таким чином, але фалідатор лдаявся на div.item-coment__description, я
                             його прибрав лишив тільки тег <p>, але валідатор всеодно видав помилку!
@@ -232,9 +234,8 @@
                                         </p>
                                     </div>
                                 </article> -->
-
-                            <article class="coments-blog__item item-coment">
-                                <div class="item-coment__body">
+                            <li class="coments-blog__item item-coment">
+                                <article class="item-coment__body">
                                     <div class="item-coment__picture">
                                         <img src="img/autor_2.webp" alt="image">
                                     </div>
@@ -251,10 +252,10 @@
                                             maximus arcu diam non diam.
                                         </p>
                                     </div>
-                                </div>
-                            </article>
-                            <article class="coments-blog__item item-coment">
-                                <div class="item-coment__body">
+                                </article>
+                            </li>
+                            <li class="coments-blog__item item-coment">
+                                <article class="item-coment__body">
                                     <div class="item-coment__picture">
                                         <img src="img/autor_3.webp" alt="image">
                                     </div>
@@ -272,10 +273,10 @@
                                             scelerisque, est eget aliquam venenatis, est sem tempor eros.
                                         </p>
                                     </div>
-                                </div>
-                            </article>
-                            <article class="coments-blog__item item-coment">
-                                <div class="item-coment__body">
+                                </article>
+                            </li>
+                            <li class="coments-blog__item item-coment">
+                                <article class="item-coment__body">
                                     <div class="item-coment__picture">
                                         <img src="img/autor_4.webp" alt="image">
                                     </div>
@@ -291,10 +292,10 @@
                                             cubilia curae.
                                         </p>
                                     </div>
-                                </div>
-                            </article>
-                            <article class="coments-blog__item item-coment">
-                                <div class="item-coment__body">
+                                </article>
+                            </li>
+                            <li class="coments-blog__item item-coment">
+                                <article class="item-coment__body">
                                     <div class="item-coment__picture">
                                         <img src="img/autor_5.webp" alt="image">
                                     </div>
@@ -311,10 +312,10 @@
                                             volutpat imperdiet ex.
                                         </p>
                                     </div>
-                                </div>
-                            </article>
-                            <article class="coments-blog__item item-coment">
-                                <div class="item-coment__body">
+                                </article>
+                            </li>
+                            <li class="coments-blog__item item-coment">
+                                <article class="item-coment__body">
                                     <div class="item-coment__picture">
                                         <img src="img/autor_6.webp" alt="image">
                                     </div>
@@ -329,9 +330,9 @@
                                             Nulla molestie interdum ultricies.
                                         </p>
                                     </div>
-                                </div>
-                            </article>
-                        </div>
+                                </article>
+                            </li>
+                        </ul>
                         <button class="button-inverse">Load More</button>
                     </section>
                 </article>
@@ -341,7 +342,7 @@
                             <input type="search" class="search-info__input" placeholder="Search..." autocomplete="off"
                                 required>
                             <button type="submit" class="search-info__button">
-                                <svg class="search-info__icon">
+                                <svg class="search-info__icon" aria-hidden="true" focusable="false">
                                     <use href="img/icons/sprite.svg#search"></use>
                                 </svg>
                             </button>
@@ -398,42 +399,51 @@
                     </section>
                     <section class="info__recently recently-info">
                         <h2 class="recently-info__title title-midle">Recently Added</h2>
-                        <div class="recently-info__list">
-                            <article class="recently-info__item tem-recently">
-                                <div class="tem-recently__image">
-                                    <img src="img/mango_2.webp" alt="image">
-                                </div>
-                                <div class="tem-recently__body">
-                                    <h3 class="tem-recently__title">Curabitur porttitor orci eget nequ accumsan.</h3>
-                                    <div class="tem-recently__published">
-                                        <time datetime="2021-04-25">Apr 25, 2021</time>
+                        <ul class="recently-info__list">
+                            <li class="recently-info__item item-recently">
+                                <article class="item-recently__body">
+                                    <div class="item-recently__image">
+                                        <img src="img/mango_2.webp" alt="image">
                                     </div>
-                                </div>
-                            </article>
-                            <article class="recently-info__item tem-recently">
-                                <div class="tem-recently__image">
-                                    <img src="img/orange_3.webp" alt="image">
-                                </div>
-                                <div class="tem-recently__body">
-                                    <h3 class="tem-recently__title">Donec mattis arcu faucibus suscipit viverra.</h3>
-                                    <div class="tem-recently__published">
-                                        <time datetime="2021-04-25">Apr 25, 2021</time>
+                                    <div class="item-recently__info">
+                                        <h3 class="item-recently__title">Curabitur porttitor orci eget nequ accumsan.
+                                        </h3>
+                                        <div class="item-recently__published">
+                                            <time datetime="2021-04-25">Apr 25, 2021</time>
+                                        </div>
                                     </div>
-                                </div>
-                            </article>
-                            <article class="recently-info__item tem-recently">
-                                <div class="tem-recently__image">
-                                    <img src="img/blackberry.webp" alt="image">
-                                </div>
-                                <div class="tem-recently__body">
-                                    <h3 class="tem-recently__title">Quisque posuere tempus rutrum. Integer velit ex.
-                                    </h3>
-                                    <div class="tem-recently__published">
-                                        <time datetime="2021-04-25">Apr 25, 2021</time>
+                                </article>
+                            </li>
+                            <li class="recently-info__item item-recently">
+                                <article class="item-recently__body">
+                                    <div class="item-recently__image">
+                                        <img src="img/orange_3.webp" alt="image">
                                     </div>
-                                </div>
-                            </article>
-                        </div>
+                                    <div class="item-recently__info">
+                                        <h3 class="item-recently__title">Donec mattis arcu faucibus suscipit viverra.
+                                        </h3>
+                                        <div class="item-recently__published">
+                                            <time datetime="2021-04-25">Apr 25, 2021</time>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recently-info__item item-recently">
+                                <article class="item-recently__body">
+                                    <div class="item-recently__image">
+                                        <img src="img/blackberry.webp" alt="image">
+                                    </div>
+                                    <div class="item-recently__info">
+                                        <h3 class="item-recently__title">Quisque posuere tempus rutrum. Integer velit
+                                            ex.
+                                        </h3>
+                                        <div class="item-recently__published">
+                                            <time datetime="2021-04-25">Apr 25, 2021</time>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
                     </section>
                 </aside>
             </div>
