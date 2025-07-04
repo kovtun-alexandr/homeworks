@@ -15,19 +15,21 @@
 
 const listElement = document.querySelector('.list')
 
-listElement.addEventListener("click", addHtmlClass)
+if (listElement) {
+    listElement.addEventListener("click", function addHtmlClass(e) {
 
-function addHtmlClass(e) {
-
-    if (e.target.closest(".list__item")) {
-        e.target.classList.toggle('active')
-        if (e.target.classList.contains('active')) {
-            e.target.style.color = "red"
-        } else {
-            e.target.removeAttribute('style')
-            // e.target.style.color = "black"
+        if (e.target.closest(".list__item")) {
+            e.target.classList.toggle('active')
+            if (e.target.classList.contains('active')) {
+                e.target.style.color = "red"
+            } else {
+                e.target.style.color = ""
+                // e.target.removeAttribute('style') Не треба так агресивно це робити, e.target.style.color = "" 
+                // краще так.Суть в тому що у цього елемента могли би бути інші інлайн стилі, і не варто видаляти весь атрибут. 
+                // Краще передати пустий рядок що прибере тільки червоний колір. 
+            }
         }
-    }
+    })
 }
 
 // Задача №2
@@ -38,11 +40,9 @@ function addHtmlClass(e) {
 // №2 - Зайва перевірка. Ви цю функцію викликаєте як callback для addEventListener, 
 // якщо функція викликана, то і так зрозуміло чим саме.
 
-window.addEventListener("load", domLoaded)
-
-function domLoaded(e) {
+window.addEventListener("DOMContentLoaded", function domLoaded(e) {
     document.documentElement.classList.add('loaded')
-}
+})
 
 // Задача №3
 // Дано в html: header main footer
@@ -57,18 +57,18 @@ function domLoaded(e) {
 // це значно зменшить навантаження на обчислення позиції курсора.
 
 const headerElement = document.querySelector('.header')
+const footerElement = document.querySelector('footer')
 
-headerElement.addEventListener("mouseenter", addHover)
-headerElement.addEventListener("mouseleave", addHover)
+if (headerElement && footerElement) {
+    headerElement.addEventListener("mouseenter", headerMouseActions)
+    headerElement.addEventListener("mouseleave", headerMouseActions)
+}
 
-function addHover(e) {
-    const footerElement = document.querySelector('footer')
-
-    if (e.type === 'mouseenter' && footerElement) {
+function headerMouseActions(e) {
+    if (e.type === 'mouseenter') {
         footerElement.style.backgroundColor = 'lightBlue'
-    } else if (e.type === 'mouseleave' && footerElement) {
-        footerElement.removeAttribute('style')
-        // footerElement.style.backgroundColor = 'transparent'
+    } else {
+        footerElement.style.backgroundColor = ''
     }
 }
 
@@ -100,16 +100,16 @@ const options = {
 
 const callback = (entries, observer) => {
     entries.forEach(entry => {
-        const dataElem = parseFloat(entry.target.dataset.count)
         const currentElement = entry.target
+        const dataElem = parseFloat(currentElement.dataset.count)
 
-        if (entry.isIntersecting && !currentElement.classList.contains('active')) {
+        if (entry.isIntersecting) {
+            observer.unobserve(currentElement)
             currentElement.classList.add('active')
             let i = 0
             let counter = setInterval(() => {
                 block.textContent = `${i}`
                 i >= dataElem ? clearInterval(counter) : ++i
-                observer.unobserve
             }, 1000)
         }
     })
