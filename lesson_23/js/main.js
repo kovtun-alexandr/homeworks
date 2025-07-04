@@ -24,46 +24,44 @@ console.log(bodyElement)
 // навіщо робити ті всі маніпуляції зі створенням списку якщо в результаті при додаванні до body елемента можна отримати false в перевірці і нічого не відбудеться? 
 // Краще перед тим як робити всі ці маніпуляції перевірити чи є взагалі куди додавати, і якщо немає то не потрібно взагалі нічого робити, це зайві дії будуть.
 
-if (bodyElement) {
+function addBlock(block, parent) {
+    if (!parent) return
 
-    function addBlock(block) {
-        bodyElement.insertAdjacentElement('afterbegin', block)
-    }
-
-    function createBlock(count = 1) {
-
-        // Це було моє виконання до того як зайшов до колеги "Alex Cherniakov", після побаченного вирішив удосконалити своє творіння
-        // let blockElement = '<ul class="list">'
-        // for (let i = 0; i < count; i++) {
-        //     blockElement += `<li class="list__item" > Елемент #${i + 1}</li>`
-        // }
-        // blockElement += '</ul>'
-
-        const ulElement = document.createElement('ul')
-        ulElement.classList.add('list')
-        for (let i = 0; i < count; i++) {
-            const liElement = document.createElement('li')
-            liElement.classList.add('list__ilem')
-            liElement.textContent = `Елемент #${i + 1}`
-            ulElement.append(liElement)
-        }
-        return addBlock(ulElement)
-    }
-
-    createBlock(7)
+    parent.insertAdjacentElement('afterbegin', block)
 }
+
+function createBlock(count = 1, element) {
+
+    // Це було моє виконання до того як зайшов до колеги "Alex Cherniakov", після побаченного вирішив удосконалити своє творіння
+    // let blockElement = '<ul class="list">'
+    // for (let i = 0; i < count; i++) {
+    //     blockElement += `<li class="list__item" > Елемент #${i + 1}</li>`
+    // }
+    // blockElement += '</ul>'
+
+    const ulElement = document.createElement('ul')
+    ulElement.classList.add('list')
+    for (let i = 0; i < count; i++) {
+        const liElement = document.createElement('li')
+        liElement.classList.add('list__ilem')
+        liElement.textContent = `Елемент #${i + 1}`
+        ulElement.append(liElement)
+    }
+    return addBlock(ulElement, element)
+}
+
+createBlock(7, bodyElement)
 
 
 // Задача №3
 // Додати до елементу < body > класс loaded.
 // якщо є клас loaded, додати стиль кольору тесту зелений:
 
-if (bodyElement) {
-    bodyElement.classList.add('loaded') // або -> bodyElement.className += ` loaded` -> bodyElement.classList.toggle('loaded')
-}
-if (bodyElement.classList.contains('loaded')) {
+if (!bodyElement.classList.contains('loaded')) {
+    bodyElement.classList.add('loaded') // або -> bodyElement.className += ` loaded`
     bodyElement.style.color = 'green'
 }
+
 
 // Задача №4
 // В html: є три елементи з класом item, кожному додати клас active,
@@ -76,13 +74,27 @@ if (bodyElement.classList.contains('loaded')) {
 
 // №6 - innerHTML для html розмітки, для текст є textContent чи innerText.
 
+// №7 - Не проблема, і не є помилкою, if (itemElements.length) просто скажу що немає сенсу перевіряти, 
+// як би для самозаспокоєння можна, але якщо не напишете помилок не буде. 
+// В разі відсутності на сторінці елементів що отримали через querySelectorAll всередині константи буде пустий масив. 
+// forEach працює з масивом, він ні однієї ітерації циклу не виконає тому що довжина масиву 0. Тому писати чи ні вирішуйте самі)
+
+// const itemElements = document.querySelectorAll('.list__item')
+// if (itemElements.length) {
+//     itemElements.forEach((itemElement, index) => {
+//         itemElement.classList.add('active')
+//         itemElement.textContent = `Елемент №${index + 1} `
+//     })
+// }
+
 const itemElements = document.querySelectorAll('.list__item') // або -> document.querySelectorAll('[class*="item"]')
-if (itemElements.length) {
-    itemElements.forEach((itemElement, index) => {
-        itemElement.classList.add('active')
-        itemElement.textContent = `Елемент №${index + 1} `
-    })
-}
+itemElements.forEach((itemElement, index) => {
+    itemElement.classList.add('active')
+    itemElement.textContent = `Елемент №${index + 1} `
+})
+
+
+
 
 // Задача №5
 // В html: текст, далі кнопка з класом button.
@@ -109,8 +121,16 @@ scrollToElement(buttonElement)
 
 const linkElement = document.querySelector('.link')
 if (linkElement) {
-    if (!linkElement.hasAttribute('data-link')) {
-        linkElement.dataset.link = 100 // або -> linkElement.setAttribute('data-link', 100)
+    //Екуиа завжди робити усе в одному стилі (has -> set -> get) або через dataset так легше і краще розуміти
+    // if (!linkElement.hasAttribute('data-link')) {
+    //     linkElement.setAttribute('data-link', 100)
+    // }
+    // if (parseFloat(linkElement.getAttribute('data-link')) < 200) {
+    //     linkElement.style.color = 'red'
+    // }
+
+    if (!linkElement.dataset.link) {
+        linkElement.dataset.link = 100
     }
     if (parseFloat(linkElement.dataset.link) < 200) {
         linkElement.style.color = 'red'
